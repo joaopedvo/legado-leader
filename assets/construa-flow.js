@@ -1,8 +1,0 @@
-(()=>{
- const key='legado-registration';let details={};try{details=JSON.parse(sessionStorage.getItem(key)||'{}')}catch{}
- document.querySelectorAll('[data-selection]').forEach(a=>a.addEventListener('click',()=>{details.ingresso=a.dataset.selection;try{sessionStorage.setItem(key,JSON.stringify(details))}catch{}}));
- const form=document.querySelector('#registration');if(form){for(const field of form.elements){if(field.name&&details[field.name])field.value=details[field.name]}
- form.addEventListener('submit',e=>{e.preventDefault();details={...details,...Object.fromEntries(new FormData(form))};try{sessionStorage.setItem(key,JSON.stringify(details))}catch{}location.href=form.action});}
- document.querySelectorAll('[data-ticket]').forEach(a=>{const type=a.dataset.ticket;const labels={nome:'Nome',papel:'Papel',time:'Tamanho do time',faturamento:'Faturamento anual',momento:'Momento da empresa',origem:'Como conheci a Legado Leader'};const lines=[`Olá! Quero solicitar o ingresso ${type} (${type==='VIP'?'R$ 4.997':'R$ 1.997'}) para o Método Construa em 28/11.`];for(const [k,label]of Object.entries(labels))if(details[k])lines.push(`${label}: ${details[k]}`);a.href='https://api.whatsapp.com/send?phone=5511924849595&text='+encodeURIComponent(lines.join('\n'));});
- if(!window.gsap||!window.ScrollTrigger)return;gsap.registerPlugin(ScrollTrigger);gsap.matchMedia().add('(prefers-reduced-motion: no-preference)',()=>{gsap.from('.hero .ey,.hero h1,.hero p,.hero .btn,.hero .btn2',{y:22,opacity:0,duration:.8,stagger:.09,clearProps:'all'});document.querySelectorAll('.sec h2,.sec .card,.sec .tk').forEach(el=>gsap.from(el,{y:22,opacity:0,duration:.65,clearProps:'opacity,transform',scrollTrigger:{trigger:el,start:'top 94%',once:true}}));});
-})();
