@@ -1,0 +1,45 @@
+/* Shared grid and visual language across every page. */
+:root{--maxw:1220px;--layout-width:1220px;--layout-gutter:40px}
+body .wrap,body .wrap.narrow,body .page>section>.wrap,body.p-home #p-home>section>.wrap,body .page .hero>.wrap.hero-grid,body.p-home .compact-strip .wrap,body header .wrap.hd{width:100%;max-width:var(--layout-width);padding-inline:var(--layout-gutter);margin-inline:auto;box-sizing:border-box}
+body header,body.p-home header,body:not(.p-home) header{position:sticky;top:0;z-index:100;background:rgba(0,30,48,.98);border-bottom:1px solid #294352;backdrop-filter:blur(16px)}
+body header .wrap.hd{min-height:84px;padding-block:16px;gap:20px}
+body header .hd nav a{font-size:12px;padding-inline:8px}
+body .page>section:not(.hero){padding-block:76px;background:#001e30;border-bottom:1px solid rgba(165,187,197,.1);scroll-margin-top:100px}
+body .page>section:not(.hero) h2{font-family:Manrope,sans-serif;font-size:clamp(28px,2.6vw,36px);font-weight:400;line-height:1.3;letter-spacing:-.035em;text-wrap:balance}
+body .page>section:not(.hero) h2:after{display:none}
+body .page>section:not(.hero) h2 .gold,body .page>section:not(.hero) h2 em{font-family:Georgia,serif;font-style:italic;font-weight:400;color:#bc9151}
+body .page>section>.wrap>h2,body .page>section>.wrap>.eyebrow{text-align:center;max-width:940px;margin-inline:auto}
+body .page>section>.wrap>.lead{max-width:900px;margin-inline:auto;font-size:16px;line-height:1.8}
+body .page>section>.wrap>h2{margin-bottom:28px}
+body .page>section:not(.hero) h3{font:500 26px/1.35 Manrope,sans-serif;letter-spacing:-.03em}
+body .page>section:not(.hero) h4{font:500 21px/1.4 Manrope,sans-serif;letter-spacing:-.025em}
+body .g2,body .g3,body .g4{gap:20px}
+body .card,body .s-cream .card{background:#0b2b3e!important;border:1px solid #294352!important;border-radius:8px;box-shadow:none;padding:28px}
+body .card:hover{transform:none;border-color:#bc9151!important}
+body .card p{color:#d5dfe5;font-size:15px;line-height:1.7}
+body .card .num{color:#bc9151;font-size:11px;margin-bottom:18px}
+body .program-card,body .s-cream .program-card{padding:0 26px 28px}
+body .program-card>img{width:calc(100% + 52px);margin:0 -26px 26px;height:240px;border:0}
+body .event-heading{display:block;text-align:center;margin-bottom:32px}
+body .event-heading .lead{margin-inline:auto;max-width:740px}
+body .event-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+body .event-grid figure{border-radius:8px;border:1px solid #294352}
+body .pain{max-width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body .pain>div,body .pain>div:last-child{padding:24px;background:#0b2b3e;border:1px solid #294352;border-radius:8px;gap:14px}
+body .pain p{font-size:15px;line-height:1.7}
+body .page .s-gold .quote{max-width:900px;margin-inline:auto;text-align:center;font-size:clamp(28px,3vw,40px)}
+body .page .s-gold>.wrap>.lead{text-align:center}
+body .numbers-section .numbers-intro{max-width:900px;margin-inline:auto}
+body .numbers-card{padding:24px;gap:14px}
+body .numbers-card p{font-size:15px}
+body .numbers-source{max-width:100%;font-size:12px}
+body .faq,body .tw,body .ag{width:100%}
+body .price,body .vip,body .lock{border-radius:8px;background:#0b2b3e;border:1px solid #294352}
+body footer{background:#001724}
+body .fgrid{gap:40px}
+body .proof-section .proof-track{gap:20px}
+body .proof-card{flex-basis:calc((100% - 40px)/3)}
+@media(max-width:1100px){body header .hd nav a{font-size:11px;padding-inline:5px}body header .wrap.hd{gap:14px}}
+@media(max-width:920px){:root{--layout-gutter:28px}body .event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body .proof-card{flex-basis:calc((100% - 20px)/2)}body header .hd nav a{font-size:14px;padding:12px}body header .wrap.hd{min-height:76px}body header nav.is-open{max-height:calc(100dvh - 100px);overflow-y:auto}}
+@media(max-width:620px){:root{--layout-gutter:22px}body .page>section:not(.hero){padding-block:54px}body .page>section:not(.hero) h2{font-size:28px}body .page>section>.wrap>.lead{font-size:15px}body .pain{grid-template-columns:1fr}body .event-grid{gap:12px}body .event-grid figure{height:230px}body .proof-card{flex-basis:100%}body .card{padding:24px}body .program-card{padding:0 24px 26px}body .program-card>img{width:calc(100% + 48px);margin-inline:-24px}body .numbers-card{padding:20px}body .fgrid{gap:30px}body header .wrap.hd{gap:12px}}
+body.p-home #p-home>section:nth-of-type(2)>.wrap{max-width:var(--layout-width)}
