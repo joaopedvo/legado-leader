@@ -1,3 +1,4 @@
+@import url("feedback-refinement.css");
 /* Legado Leader — visual reference v1, applied 2026-10-23. */
 :root{--ouro:#b9915b;--ouro-profundo:#90652b;--ouro-traco:#5b472d;--ouro-30:#b9915b4d;--prata:#f5f4f3;--texto-2:#ffffffb0;--texto-3:#ffffff8f;--fio:#ffffff1f;--vidro:#ffffff14;--preto:#000;--tinta-card:#000e17;--tinta-secao:#010e19;--petroleo:#031a26;--marinho:#001f35;--display:'Unbounded',Arial,sans-serif;--sans:'Manrope',Arial,sans-serif;--r-tag:8px;--r-box:10px;--r-card:15px;--r-ticket:20px;--r-secao:25px;--r-pill:100px;--gold:var(--ouro);--gold-2:var(--ouro-profundo);--cream:var(--prata);--txt-2:var(--texto-2);--txt-3:var(--texto-3);--line:var(--ouro-30);--navy-900:var(--preto);--navy-800:var(--tinta-secao)}
 html,body{background:var(--preto);color:var(--prata);font-family:var(--sans);font-size:16px;line-height:26px}

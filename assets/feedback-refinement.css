@@ -1,0 +1,18 @@
+/* Refinamentos da revisão em vídeo: prova, dados, programas e CTA. */
+#p-home .proof-section > .wrap > .lead,#p-home .numbers-section .numbers-intro,#p-home .s-cream > .wrap > .lead{max-width:62ch}
+#p-home .proof-track{align-items:stretch;gap:clamp(14px,2vw,24px);padding-block:12px 18px}
+#p-home .proof-card{display:flex;flex:0 0 min(380px,30vw);flex-direction:column;min-height:330px;padding:clamp(25px,3vw,40px);border:1px solid rgba(255,251,238,.16);border-radius:16px;background:linear-gradient(155deg,rgba(255,251,238,.08),rgba(255,251,238,.025));transition:border-color .25s ease,transform .25s ease,background .25s ease}
+#p-home .proof-card:hover,#p-home .proof-card:focus-within{border-color:rgba(229,174,85,.75);background:linear-gradient(155deg,rgba(229,174,85,.14),rgba(255,251,238,.035));transform:translateY(-4px)}
+#p-home .proof-card p{margin-top:auto}#p-home .proof-controls{margin-top:22px}#p-home .proof-dot{width:11px;height:11px}
+#p-home .numbers-grid{gap:clamp(14px,2vw,24px);margin-top:48px}
+#p-home .numbers-card{min-height:245px;padding:clamp(25px,3vw,38px);border:1px solid rgba(255,251,238,.2);border-radius:16px;background:rgba(255,251,238,.055)}
+#p-home .numbers-card strong{display:block;margin-bottom:18px;color:var(--gold);font-family:Manrope,sans-serif;font-size:clamp(2.5rem,4vw,4.6rem);line-height:.95;letter-spacing:-.06em}
+#p-home .numbers-card p{max-width:30ch}#p-home .numbers-source{max-width:72ch;margin-top:30px;opacity:.72}
+#p-home .pain>div:last-child{border-color:rgba(229,174,85,.72);background:rgba(229,174,85,.08)}
+#p-home .pain>div:last-child .x,#p-home .pain>div:last-child strong{color:var(--gold)!important}
+#p-home .program-card{display:flex;flex-direction:column;min-height:470px}
+#p-home .program-card>.btn,#p-home .program-card>.btns{margin-top:auto!important}#p-home .program-card img{aspect-ratio:4/3;object-fit:cover}
+#p-home .bio-photo{border-radius:16px;overflow:hidden}#p-home .bio-photo img{display:block;width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center 30%}
+#p-home .final h2{max-width:12ch;margin-inline:auto}#p-home .final .lead{max-width:52ch}
+@media(max-width:900px){#p-home .proof-card{flex-basis:min(78vw,380px)}#p-home .numbers-card{min-height:0}#p-home .program-card{min-height:0}#p-home .bio-photo img{min-height:380px}}
+@media(max-width:620px){#p-home .proof-track{margin-inline:-24px;padding-inline:24px}#p-home .proof-card{flex-basis:calc(100vw - 48px);min-height:290px}#p-home .numbers-grid{grid-template-columns:1fr}#p-home .numbers-card strong{font-size:3.2rem}#p-home .bio-photo img{min-height:320px}#p-home .final .btns{flex-direction:column;align-items:stretch}#p-home .final .btns .btn{width:100%}}
