@@ -53,3 +53,7 @@ html body.p-home .hero h1 br{display:none!important}
 .p-home .hero h1 .g{display:inline!important;margin-top:0!important;padding-top:0!important;border-top:0!important;font-size:1em!important;line-height:inherit!important}
 html body.p-home .hero h1 .g{display:inline!important;border:0!important;padding:0!important;margin:0!important;max-width:none!important;font-size:inherit!important;line-height:inherit!important}
 html body.p-home .hero h1{max-width:none!important}
+/* Homepage headline: restore the original two-level composition. */
+html body.p-home .hero h1>br{display:none!important}
+html body.p-home .hero h1 .g{display:block!important;font-size:clamp(25px,2vw,35px)!important;line-height:1.35!important;margin-top:38px!important;padding-top:38px!important;border-top:1px solid #b48d505c!important;max-width:720px!important}
+@media(max-width:620px){html body.p-home .hero h1 .g{font-size:26px!important;margin-top:25px!important;padding-top:25px!important}}
