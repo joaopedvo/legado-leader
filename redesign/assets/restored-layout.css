@@ -1,0 +1,28 @@
+/* Text accommodation only: the previous visual system supplies the layout. */
+html body #conteudo>.restored-layout{display:block!important}
+.restored-layout .restored-grid{margin-top:36px;align-items:stretch}
+.restored-layout .restored-single{max-width:760px;margin-inline:auto}
+.restored-layout .price-wrap:has(>.price:only-child){grid-template-columns:minmax(0,760px);justify-content:center}
+.restored-layout .card .num{margin-bottom:16px}
+.restored-layout .restored-grid:has(.restored-list li:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
+.restored-layout .restored-list{padding-left:20px;margin:20px 0;color:var(--texto-2);font-size:15px;line-height:1.8}
+.restored-layout .restored-list li+li{margin-top:10px}
+.restored-layout .card h4{margin-bottom:16px}
+.restored-layout .card p+p{margin-top:14px}
+.restored-layout .card .btns{margin-top:24px}
+.restored-layout .hero .sub+.sub{border:0;padding:0;margin-top:18px}
+.restored-layout .hero .btns{margin-top:28px}
+.restored-layout .event-grid{margin-top:32px}
+.restored-layout .event-grid figure{margin:0}
+.restored-layout .price-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+.restored-layout .price p,.restored-layout .vip p{font-size:15px;line-height:1.75;margin-top:16px;color:var(--texto-2)}
+.restored-layout .price .v,.restored-layout .vip .v{font-size:clamp(30px,3.4vw,46px);line-height:1.2;letter-spacing:-1px;margin-block:20px}
+.restored-layout .price .btns,.restored-layout .vip .btns{margin-top:28px}
+.restored-layout .tw{overflow-x:auto;margin-top:32px}
+.restored-layout .tw table{width:100%;min-width:580px;border-collapse:collapse;text-align:left}
+.restored-layout .tw th,.restored-layout .tw td{padding:20px;border:1px solid var(--fio);line-height:1.6}
+.restored-layout .restored-photo{margin:32px 0;border-radius:var(--r-ticket);overflow:hidden}
+.restored-layout .restored-photo img{display:block;width:100%;max-height:520px;object-fit:cover}
+.restored-layout .bio-photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.restored-layout .price-wrap{grid-template-columns:1fr}}
+@media(max-width:620px){.restored-layout .restored-grid:has(.restored-list li:nth-child(4)){grid-template-columns:1fr}.restored-layout .card{min-width:0}.restored-layout .btns{flex-wrap:wrap}.restored-layout .btn{white-space:normal}.restored-layout .tw th,.restored-layout .tw td{padding:14px}}
