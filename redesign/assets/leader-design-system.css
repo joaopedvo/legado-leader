@@ -47,3 +47,5 @@ body footer{background:#000;border-color:var(--ouro-30)}body footer h5,body .gol
 body .numbers-source,body .proof-note{color:var(--texto-3)}
 @media(max-width:620px){body .page>section:not(.hero){padding-block:56px}body .page .hero h1,body.p-home .hero h1{font-size:32px;line-height:1.15}body .page .hero h1 .g,body.p-home .hero h1 .g{font-size:24px}body .page>section:not(.hero) h2,body .page>section.proof-section:not(.hero) h2{font-size:26px;line-height:1.3}body .page .hero .badge.b-gold{letter-spacing:1px}body .proof-card{padding:28px}body .page .s-gold .quote,body .page .s-gold .quote b{font-size:24px}body .announcement-name{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+/* Copy review: keep the adapted headline as one readable sentence. */
+.hero h1 br{display:none}
